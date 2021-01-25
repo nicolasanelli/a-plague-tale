@@ -1,18 +1,28 @@
-import Header from './layout/Header';
-import Status from './components/Status';
-import { Container } from 'semantic-ui-react';
-import Resources from './components/Resources';
+import Nav from './layout/Nav';
+import { Container, Grid } from 'semantic-ui-react';
+import ServerMessages from './components/ServerMessages';
+import Environment from './components/Environment';
+import Amicia from './components/Amicia';
+import Crafting from './components/Crafting';
 
 const App = () => {
   return (
     <>
-      <Header />
-      <Container fluid={ true } style={{ padding: '5em 0em' }}>
-        <Status />
-        <Resources />
+      <Nav />
+      <Container fluid={ true } style={{ padding: '5em 2em 0em 2em' }}>
+        <Grid>
+          <Grid.Row>
+            <Grid.Column width={12} >
+              <Environment />
+              <Crafting />
+              <Amicia />
+            </Grid.Column>
+            <Grid.Column width={4} >
+              <ServerMessages />
+            </Grid.Column>
+          </Grid.Row>
+        </Grid>
       </Container>
-      {/* <Example />
-      <BootstrapMigrationLayout /> */}
     </>
   );
 }
