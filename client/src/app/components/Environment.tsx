@@ -1,13 +1,13 @@
 import { Button, Divider, Header } from "semantic-ui-react";
 import Socket from '../connections/Socket'
-import alcohol from './svgs/alcohol.svg'
-import cloth from './svgs/cloth.svg'
-import episanguis from './svgs/episanguis.svg'
-import leather from './svgs/leather.svg'
-import rock from './svgs/rock.svg'
-import saltpeter from './svgs/saltpeter.svg'
-import string from './svgs/string.svg'
-import sulfur from './svgs/sulfur.svg'
+import { ReactComponent as Alcohol } from '../../assets/svgs/alcohol.svg'
+import { ReactComponent as Cloth } from '../../assets/svgs/cloth.svg'
+import { ReactComponent as Episanguis } from '../../assets/svgs/episanguis.svg'
+import { ReactComponent as Leather } from '../../assets/svgs/leather.svg'
+import { ReactComponent as Rock } from '../../assets/svgs/rock.svg'
+import { ReactComponent as Saltpeter } from '../../assets/svgs/saltpeter.svg'
+import { ReactComponent as String } from '../../assets/svgs/string.svg'
+import { ReactComponent as Sulfur } from '../../assets/svgs/sulfur.svg'
 
 const Environment = () => {
 
@@ -47,33 +47,42 @@ const Environment = () => {
         Environment
       </Header>
       <Button onClick={getMoreRocks}>
-        <img style={{ marginRight: "4px" }} height={12} src={ rock } alt="Rocks" /> Pedras
+        <Rock style={{ marginRight: "4px" }} width={12} height={12} />
+        Pedras
       </Button>
       <Button onClick={getMoreJars}>
-        <img style={{ marginRight: "4px" }} height={12} src={ rock } alt="Jar" /> Jarro
+        <Rock style={{ marginRight: "4px" }} width={12} height={12} />
+        Jarro
       </Button>
       <Divider />
       <Button onClick={getMoreSulfur}>
-        <img style={{ marginRight: "4px" }} height={12} src={ sulfur } alt="Sulfur" /> Enxofre
+        <Sulfur style={{ marginRight: "4px" }} width={12} height={12} />
+        Enxofre
       </Button>
       <Button onClick={getMoreSaltpeter}>
-        <img style={{ marginRight: "4px" }} height={12} src={ saltpeter } alt="Saltpeter" /> Salitre
+        <Saltpeter style={{ marginRight: "4px" }} width={12} height={12} />
+        Salitre
       </Button>
       <Button onClick={getMoreAlcohol}>
-        <img style={{ marginRight: "4px" }} height={12} src={ alcohol } alt="Alcohol" /> Álcool
+        <Alcohol style={{ marginRight: "4px" }} width={12} height={12} /> 
+        Álcool
       </Button>
       <Button onClick={getMoreEpisanguis}>
-        <img style={{ marginRight: "4px" }} height={12} src={ episanguis } alt="Episanguis" /> Episanguis
+        <Episanguis style={{ marginRight: "4px" }} width={12} height={12} />
+        Episanguis
       </Button>
       <Divider />
       <Button onClick={getMoreCloth}>
-        <img style={{ marginRight: "4px" }} height={12} src={ cloth } alt="Cloth" /> Tecido
+        <Cloth style={{ marginRight: "4px" }} width={12} height={12} />
+        Tecido
       </Button>
       <Button onClick={getMoreLeather}>
-        <img style={{ marginRight: "4px" }} height={12} src={ leather } alt="Leather" /> Couro
+        <Leather style={{ marginRight: "4px" }} width={12} height={12} />
+        Couro
       </Button>
       <Button onClick={getMoreString}>
-        <img style={{ marginRight: "4px" }} height={12} src={ string } alt="String" /> Barbante
+        <String style={{ marginRight: "4px" }} width={12} height={12} />
+        Barbante
       </Button>
     </>
   );
