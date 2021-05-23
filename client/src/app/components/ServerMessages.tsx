@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Header, Message, Segment, Transition } from "semantic-ui-react";
-import Socket from '../connections/Socket'
+import { Socket } from '../connections/Socket'
 
 interface MessageInterface {
   date: string,

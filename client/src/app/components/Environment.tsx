@@ -1,5 +1,5 @@
 import { Button, Divider, Header } from "semantic-ui-react";
-import Socket from '../connections/Socket'
+import { Socket } from '../connections/Socket'
 import { ReactComponent as Alcohol } from '../../assets/svgs/alcohol.svg'
 import { ReactComponent as Cloth } from '../../assets/svgs/cloth.svg'
 import { ReactComponent as Episanguis } from '../../assets/svgs/episanguis.svg'

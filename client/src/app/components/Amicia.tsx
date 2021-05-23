@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Grid, Header, List } from "semantic-ui-react";
-import Socket from "../connections/Socket";
+import { Socket } from "../connections/Socket";
 
 interface Game {
   char: {

@@ -2,9 +2,9 @@
 {
   // The following will hide the js and map files in the editor
   "files.exclude": {
-      "**/*/node_modules": true,
-      "**/*/.eslintcache": true,
-      "**/*/yarn.lock": true,
-      "**/*/package-lock.json": true
+      "**/*/node_modules": false,
+      "**/*/.eslintcache": false,
+      "**/*/yarn.lock": false,
+      "**/*/package-lock.json": false
   }
 }

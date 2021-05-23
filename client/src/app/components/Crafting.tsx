@@ -1,5 +1,5 @@
 import { Button, Header } from "semantic-ui-react";
-import Socket from '../connections/Socket'
+import { Socket } from '../connections/Socket'
 
 
 const Crafting = () => {
